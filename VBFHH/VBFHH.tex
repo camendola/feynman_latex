@@ -3,97 +3,102 @@
 
 \begin{document}
 \mbox{
-\begin{fmffile}{diagram1}
+  \begin{fmffile}{diagram_k2v}
 
-\begin{fmfgraph*}(120, 80)
-    \fmfleft{i1,i4} 
-    \fmfright{o1,o2,o3,o4}
-    \fmf{fermion}{i1,v1,o1}
-    \fmf{fermion}{i4,v3,o4}
-    \fmf{phantom,tension=0.2}{v1,v3}
-\fmfdot{v1}
-\fmfdot{v2}
-\fmfdot{v3}
-    \fmffreeze
-    \fmf{boson,label=V,label.side=right}{v3,v2,v1}
-    \fmf{dashes, label=H, label.side=right}{v2,o2}
-    \fmf{dashes, label=H, label.side=left}{v2,o3}
-	
-    \fmfshift{10 left}{o2}
-     \fmfshift{10 left}{o3}
+    \begin{fmfgraph*}(120, 80)
+      \fmfleft{i1,i4} 
+      \fmfright{o1,o2,o3,o4}
+      \fmf{fermion}{i1,v1,o1}
+      \fmf{fermion}{i4,v3,o4}
+      \fmf{phantom,tension=0.2}{v1,v3}
+      \fmfdot{v1}
+      \fmfv{decor.shape=circle,decor.filled=full,decor.size=2thick,
+    label=$\kappa_{2\mathrm{V}}$,label.dist=5mm}{v2}
+      \fmfdot{v3}
       \fmffreeze
-    \fmfshift{10 left}{v2}
-    \fmflabel{$q$}{i4}
-    \fmflabel{$q$}{i1}
+      \fmf{boson,label=V,label.side=right}{v3,v2,v1}
+      \fmf{dashes, label=H, label.side=right}{v2,o2}
+      \fmf{dashes, label=H, label.side=left}{v2,o3}
+      
+      \fmfshift{10 left}{o2}
+      \fmfshift{10 left}{o3}
+      \fmffreeze
+      \fmfshift{10 left}{v2}
+      \fmflabel{$q$}{i4}
+      \fmflabel{$q$}{i1}
+      
+    \end{fmfgraph*}
+  \end{fmffile}
 
-\end{fmfgraph*}
-\end{fmffile}
+  \vspace {30mm}
+  \begin{fmffile}{diagram_kv}
 
-\vspace {30mm}
-\begin{fmffile}{diagram2}
-
-\begin{fmfgraph*}(120, 80)
-    \fmfleft{i1,i4} 
-    \fmfright{o1,o2,o3,o4}
-    \fmf{fermion}{i1,v1,o1}
-    \fmf{fermion}{i4,v4,o4}
-    \fmf{phantom,tension=0.2}{v1,v4}
-\fmfdot{v1}
-\fmfdot{v2}
-\fmfdot{v3}
-\fmfdot{v4}
-    \fmffreeze
-    \fmf{boson}{v4,v3,v2,v1}
-    \fmf{phantom, label=V,label.side=right}{v2,v1}
+    \begin{fmfgraph*}(120, 80)
+      \fmfleft{i1,i4} 
+      \fmfright{o1,o2,o3,o4}
+      \fmf{fermion}{i1,v1,o1}
+      \fmf{fermion}{i4,v4,o4}
+      \fmf{phantom,tension=0.2}{v1,v4}
+      \fmfdot{v1}
+      \fmfv{decor.shape=circle,decor.filled=full,decor.size=2thick,
+    label=$\kappa_{\mathrm{V}}$,label.angle=45,label.dist=1mm}{v2}
+      \fmfv{decor.shape=circle,decor.filled=full,decor.size=2thick,
+    label=$\kappa_{\mathrm{V}}$,label.angle=-45,label.dist=1mm}{v3}
+      \fmfdot{v4}
+      \fmffreeze
+      \fmf{boson}{v4,v3,v2,v1}
+      \fmf{phantom, label=V,label.side=right}{v2,v1}
       \fmf{phantom, label=V,label.side=right}{v4,v3}
-    \fmf{dashes, label=H, label.side=right}{v2,o2}
-    \fmf{dashes, label=H, label.side=left}{v3,o3}
-	
-    \fmfshift{10 left}{o2}
-     \fmfshift{10 left}{o3}
+      \fmf{dashes, label=H, label.side=right}{v2,o2}
+      \fmf{dashes, label=H, label.side=left}{v3,o3}
+      
+      \fmfshift{10 left}{o2}
+      \fmfshift{10 left}{o3}
       \fmffreeze
-    \fmfshift{5 left}{v3}
-\fmfshift{5 down}{v3}
+      \fmfshift{5 left}{v3}
+      \fmfshift{5 down}{v3}
       \fmfshift{5 left}{v2}
-            \fmfshift{5 up}{v2}
-    \fmflabel{$q$}{i4}
-    \fmflabel{$q$}{i1}
+      \fmfshift{5 up}{v2}
+      \fmflabel{$q$}{i4}
+      \fmflabel{$q$}{i1}
 
-\end{fmfgraph*}
-\end{fmffile}
+    \end{fmfgraph*}
+  \end{fmffile}
 
 
-\begin{fmffile}{diagram3}
+  \begin{fmffile}{diagram_kl}
 
-\begin{fmfgraph*}(120, 80)
-    \fmfleft{i1,i3} 
-    \fmfright{o1,o1h,o2,o2h,o3}
-    \fmf{fermion}{i1,v1,o1}
-    \fmf{fermion}{i3,v3,o3}
-    \fmf{phantom,tension=0.2}{v1,v3}
-    \fmfdot{v1}
+    \begin{fmfgraph*}(120, 80)
+      \fmfleft{i1,i3} 
+      \fmfright{o1,o1h,o2,o2h,o3}
+      \fmf{fermion}{i1,v1,o1}
+      \fmf{fermion}{i3,v3,o3}
+      \fmf{phantom,tension=0.2}{v1,v3}
+      \fmfdot{v1}
 
-   \fmfdot{v3}
+      \fmfdot{v3}
 
-    \fmffreeze
-    \fmf{boson,label=V,label.side=right}{v3,v2,v1}
-    \fmf{dashes}{v2,o2}
-   \fmfdot{v2}
-	\fmf{phantom,tension=1.2,label=H,l.s=left}{o1h,o2,o2h}
-	\fmffreeze
-		\fmf{dashes}{o1h,o2}
-		\fmf{dashes}{o2h,o2}
-	  \fmfdot{o2}
- \fmfshift{30 left}{o2}
-  \fmfshift{10 left}{v2}
-  \fmfshift{10 left}{o1h}
-   \fmfshift{10 left}{o2h}
+      \fmffreeze
+      \fmf{boson,label=V,label.side=right}{v3,v2,v1}
+      \fmf{dashes}{v2,o2}
+      \fmfv{decor.shape=circle,decor.filled=full,decor.size=2thick,
+    label=$\kappa_{\mathrm{V}}$,label.angle=180,label.dist=2mm}{v2}
+      \fmf{phantom,tension=1.2,label=H,l.s=left}{o1h,o2,o2h}
+      \fmffreeze
+      \fmf{dashes}{o1h,o2}
+      \fmf{dashes}{o2h,o2}
+      \fmfv{decor.shape=circle,decor.filled=full,decor.size=2thick,
+    label=$\kappa_{\lambda}$,label.dist=3mm}{o2}
+      \fmfshift{30 left}{o2}
+      \fmfshift{10 left}{v2}
+      \fmfshift{10 left}{o1h}
+      \fmfshift{10 left}{o2h}
       \fmfshift{5 down}{o2h}
-           \fmfshift{5 up}{o1h}
-\fmflabel{$q$}{i3}
-    \fmflabel{$q$}{i1}
+      \fmfshift{5 up}{o1h}
+      \fmflabel{$q$}{i3}
+      \fmflabel{$q$}{i1}
 
-\end{fmfgraph*}
-\end{fmffile}
+    \end{fmfgraph*}
+  \end{fmffile}
 }
 \end{document}
